@@ -1,0 +1,66 @@
+.columns > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.columns img {
+  width: 100%;
+}
+
+.columns > div > div {
+  order: 1;
+}
+
+.columns > div > .columns-img-col {
+  order: 0;
+}
+
+.columns > div > .columns-img-col img {
+  display: block;
+}
+
+@media (width >= 900px) {
+  .columns > div {
+    align-items: center;
+    flex-direction: unset;
+    gap: 24px;
+  }
+
+  .columns > div > div {
+    flex: 1;
+    order: unset;
+  }
+}
+
+.columns.blue-bg {
+    background: linear-gradient(120deg, #0047bb 50%, #0683AD 100%, transparent);
+    width: 100%;
+    color: white;
+    padding: auto;
+}
+
+.columns.blue-bg h3, .columns.blue-bg a {
+    color: white;
+}
+
+.columns.blue-bg a {
+  border: 2px solid #fff;
+}
+
+.columns.border > div > div {
+  background: white;
+  border-radius: 5px;
+  box-shadow: rgba(73, 86, 106, 0.20) 0px 8px 40px;
+}
+
+.columns.border > div > div > h3, .columns.border > div > div > p:not(:first-child) {
+  padding: 1rem;
+}
+
+.columns.border > div > div > p:first-child {
+  margin: 0rem;
+}
+
+.columns.img-circle > div > .columns-img-col img {
+  border-radius: 20rem;
+}

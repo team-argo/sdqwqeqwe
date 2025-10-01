@@ -1,0 +1,31 @@
+footer {
+  background-color: #f5f5f5;
+  font-size: var(--body-font-size-xs);
+  color: #5b5958;
+  border-top: 4px solid var(--primary-blue)
+}
+
+footer .footer > div {
+  margin: auto;
+  max-width: 1200px;
+  padding: 40px 24px 24px;
+}
+
+footer .footer p {
+  margin: 0;
+}
+
+footer h2,footer h3 {
+  color: #5b5758
+}
+
+footer a:any-link {
+    color: currentcolor;
+    text-decoration: underline;
+}
+
+@media (width >= 900px) {
+  footer .footer > div {
+    padding: 40px 32px 24px;
+  }
+}
